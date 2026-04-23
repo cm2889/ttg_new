@@ -11,7 +11,7 @@ const logos = [
     {src: "/images/Home/Omami.png",},
 ];
 
-const Trust_by_client = () => {
+const TrustClient = () => {
     return (
          <section className="relative  bg-[#f5f7f8]  min-h-[20vh] lg:min-h-[40vh] overflow-hidden">
                     <Container className="relative flex flex-col items-center justify-center gap-6 sm:gap-12 py-6 sm:py-12 z-10">
@@ -54,4 +54,4 @@ const Trust_by_client = () => {
     );
 };
 
-export default Trust_by_client;
+export default TrustClient;

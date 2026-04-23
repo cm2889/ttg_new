@@ -54,7 +54,7 @@ const workflowSteps = [
     },
 ];
 
-const How_we_work = () => {
+const HowWeWork = () => {
     return (
         <section className="bg-[#f4f6f7]">
             <Container className="py-16 md:py-24">
@@ -138,4 +138,4 @@ const How_we_work = () => {
     );
 };
 
-export default How_we_work;
+export default HowWeWork;

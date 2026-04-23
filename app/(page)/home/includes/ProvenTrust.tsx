@@ -11,7 +11,7 @@ const reviewCards: { id: number; name: string; logo: string }[] = [
     { id: 6, name: "Clutch", logo: "/images/Home/Clutch-logo.png" },
 ];
 
-const Proven_Trust = () => {
+const ProvenTrust = () => {
     return (
         <section
             className="bg-[#f5f7f8]"
@@ -57,4 +57,4 @@ const Proven_Trust = () => {
     );
 };
 
-export default Proven_Trust;
+export default ProvenTrust;

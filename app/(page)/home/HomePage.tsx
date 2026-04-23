@@ -2,11 +2,13 @@ import React from "react";
 import Hero from "./includes/Hero";
 import Partners from "./includes/Partners";
 import Service from "./includes/Service";
-import Why_ttg from "./includes/Why_ttg";
-import How_we_work from "./includes/How_we_work";
-import Trust_by_client from "./includes/Trust_by_client";
 import Stories from "./includes/Stories";
-import Proven_Trust from "./includes/Proven_Trust";
+import TrustClient from "./includes/TrustClient";
+import ProvenTrust from "./includes/ProvenTrust";
+import HowWeWork from "./includes/HowWeWork";
+import WhyTtg from "./includes/WhyTtg";
+import SuccessStories from "./includes/SuccessStories";
+import Faq from "./includes/Faq";
 
 const HomePage = () => {
     return (
@@ -14,11 +16,13 @@ const HomePage = () => {
             <Hero />
             <Partners />
             <Service />
-            <Why_ttg />
-            <How_we_work />
-            <Trust_by_client />
+            <WhyTtg />
+            <HowWeWork />
+            <TrustClient />
             <Stories />
-            <Proven_Trust /> 
+            <SuccessStories />
+            <Faq />
+            <ProvenTrust />
         </div>
     );
 };

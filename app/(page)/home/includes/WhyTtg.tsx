@@ -38,7 +38,7 @@ const whyCards = [
     },
 ];
 
-const Why_ttg = () => {
+const WhyTtg = () => {
     return (
         <section className="bg-[#ffffff]">
             <Container className="py-14 md:py-20">
@@ -119,4 +119,4 @@ const Why_ttg = () => {
     );
 };
 
-export default Why_ttg;
+export default WhyTtg;
