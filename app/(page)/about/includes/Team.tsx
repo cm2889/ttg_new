@@ -42,16 +42,18 @@ const Team = () => {
         <section className="w-full overflow-hidden bg-[#ffffff] py-16 md:py-10">
             <Container>
                 <div className="max-w-3xl">
-                    <InfoBadge
-                        icon="/icons/Badges/three-people.png"
-                        text="Meet The Team"
-                        className="mb-8"
-                    />
+                    <div className="flex justify-center md:justify-start">
+                        <InfoBadge
+                            icon="/icons/Badges/three-people.png"
+                            text="Meet The Team"
+                            className="mb-4"
+                        />
+                    </div>
 
-                    <h2 className="font-clash text-[28px]  font-medium text-[#0d1219] md:text-[40px]">
+                    <h2 className="font-clash flex justify-center text-[28px] font-medium text-[#0d1219] md:justify-start md:text-[40px]">
                         The Team Behind TTG
                     </h2>
-                    <p className="mt-4 max-w-2xl font-funnel text-[18px] leading-[1.55] text-[#4f555c] md:text-[16px]">
+                    <p className="font-funnel mt-2 text-center text-[14px] leading-[1.55] text-[#4f555c] md:max-w-xl md:text-left md:text-[16px]">
                         A multidisciplinary team of visionaries, engineers, and
                         operational experts dedicated to scaling your business.
                     </p>
@@ -71,10 +73,10 @@ const Team = () => {
                                         className="group/member w-72 shrink-0 sm:w-80 lg:w-96"
                                     >
                                         <div className="relative overflow-hidden border border-transparent transition-colors duration-500 group-hover/member:border-[#0c7e9a]">
-                                            <span className="pointer-events-none absolute top-0 left-0 z-20 h-12 w-12 border-t border-l border-[#0c7e9a] transition-opacity duration-300 group-hover/member:opacity-0" />
-                                            <span className="pointer-events-none absolute top-0 right-0 z-20 h-12 w-12 border-t border-r border-[#0c7e9a] transition-opacity duration-300 group-hover/member:opacity-0" />
-                                            <span className="pointer-events-none absolute bottom-0 left-0 z-20 h-12 w-12 border-b border-l border-[#0c7e9a] transition-opacity duration-300 group-hover/member:opacity-0" />
-                                            <span className="pointer-events-none absolute right-0 bottom-0 z-20 h-12 w-12 border-r border-b border-[#0c7e9a] transition-opacity duration-300 group-hover/member:opacity-0" />
+                                            <span className="pointer-events-none absolute top-0 left-0 z-20 h-12 w-12 border-t-2 border-l border-[#0c7e9a] transition-opacity duration-300 group-hover/member:opacity-0" />
+                                            <span className="pointer-events-none absolute top-0 right-0 z-20 h-12 w-12 border-t-2 border-r border-[#0c7e9a] transition-opacity duration-300 group-hover/member:opacity-0" />
+                                            <span className="pointer-events-none absolute bottom-0 left-0 z-20 h-12 w-12 border-b-2 border-l border-[#0c7e9a] transition-opacity duration-300 group-hover/member:opacity-0" />
+                                            <span className="pointer-events-none absolute right-0 bottom-0 z-20 h-12 w-12 border-r-2 border-b border-[#0c7e9a] transition-opacity duration-300 group-hover/member:opacity-0" />
 
                                             <div className="pointer-events-none absolute inset-0 z-10 border border-[#0c7e9a] opacity-0 transition-opacity duration-500 group-hover/member:opacity-100" />
 
@@ -95,12 +97,12 @@ const Team = () => {
                                             </div>
                                         </div>
 
-                                        <div className="mt-5 flex items-start justify-between gap-4 px-1">
+                                        <div className="mt-5 flex items-start justify-between gap-4 px-5">
                                             <div>
-                                                <p className="font-clash text-[16px] font-medium  text-btn-primary uppercase">
+                                                <p className="font-clash text-btn-primary text-[16px] font-medium uppercase">
                                                     {member.role}
                                                 </p>
-                                                <h3 className="mt-1 font-clash text-[24px] leading-tight font-medium text-[#0d1219]">
+                                                <h3 className="font-clash mt-1 text-[24px] leading-tight font-medium text-[#0d1219]">
                                                     {member.name}
                                                 </h3>
                                             </div>

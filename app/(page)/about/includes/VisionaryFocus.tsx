@@ -9,7 +9,6 @@ interface ValuePoint {
     icon: string;
 }
 
-
 const valuePoints: ValuePoint[] = [
     {
         title: "Client Outcome First",
@@ -42,17 +41,17 @@ const VisionaryFocus = () => {
         <section className="w-full bg-[#ffffff] py-16 md:py-24">
             <Container>
                 <div className="grid items-start gap-10 lg:grid-cols-2 lg:gap-14">
-                    <div className="max-w-2xl">
+                    <div className="md:max-w-2xl">
                         <InfoBadge
                             icon="/icons/Badges/Visionary.png"
                             text="Visionary Focus"
-                            className="mb-12"
+                            className="mb-6 md:mb-12"
                         />
 
-                        <h2 className="font-clash text-xl font-medium  text-[#0b0b0b] md:text-[32px]">
+                        <h2 className="font-clash text-[20px] font-medium text-[#0b0b0b] md:text-[32px]">
                             What Drives Us
                         </h2>
-                        <p className="mt-5 font-funnel text-[36px]  text-[#555555] md:text-[16px]">
+                        <p className="font-funnel mt-5 text-[12px] text-[#555555] md:text-[16px]">
                             At TTG, we&rsquo;re driven by the belief that great
                             businesses scale through smart systems, strong
                             teams, and seamless execution&mdash;built to deliver
@@ -61,10 +60,10 @@ const VisionaryFocus = () => {
 
                         <div className="mt-5 border-t border-[#cfcfcf]" />
 
-                        <h3 className="mt-5 font-clash text-5xl font-medium tracking-[-0.02em] text-[#0b0b0b] md:text-[32px]">
+                        <h3 className="font-clash mt-5 text-[20px] font-medium tracking-[-0.02em] text-[#0b0b0b] md:text-[32px]">
                             Our Vision
                         </h3>
-                        <p className="mt-7 font-funnel text-[36px] leading-[1.45] text-[#555555] md:text-[16px]">
+                        <p className="font-funnel mt-7 text-[12px] leading-[1.45] text-[#555555] md:text-[16px]">
                             To become the world&rsquo;s most trusted full-stack
                             operations partner - enabling businesses to scale
                             without limits through intelligent technology,
@@ -73,10 +72,10 @@ const VisionaryFocus = () => {
 
                         <div className="mt-5 border-t border-[#cfcfcf]" />
 
-                        <h3 className="mt-5 font-clash text-xl font-medium text-[#0b0b0b] md:text-[32px]">
+                        <h3 className="font-clash mt-5 text-[20px] font-medium text-[#0b0b0b] md:text-[32px]">
                             Mission
                         </h3>
-                        <p className="mt-5 font-funnel text-[36px]  text-[#555555] md:text-[16px]">
+                        <p className="font-funnel mt-5 text-[12px] text-[#555555] md:text-[16px]">
                             Deliver outcome-driven business solutions that
                             combine people, process, and technology - making
                             enterprise - grade capabilities accessible to every
@@ -118,10 +117,10 @@ const VisionaryFocus = () => {
                                         </div>
 
                                         <div>
-                                            <h4 className="font-clash text-5xl font-medium tracking-[-0.02em] text-[#101317] md:text-[24px]">
+                                            <h4 className="font-clash text-[20px] font-medium tracking-[-0.02em] text-[#101317] md:text-[24px]">
                                                 {point.title}
                                             </h4>
-                                            <p className="mt-4 font-funnel text-[34px] leading-[1.45] text-[#4e4e4e] md:text-[16px]">
+                                            <p className="font-funnel mt-4 text-[12px] leading-[1.45] text-[#4e4e4e] md:text-[16px]">
                                                 {point.description}
                                             </p>
                                         </div>

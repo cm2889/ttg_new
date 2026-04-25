@@ -62,11 +62,9 @@ export default function RootLayout({
             lang="en"
             className={`${clashDisplay.variable} ${funnelSans.variable}`}
         >
-            <body className="flex flex-col min-h-screen">
+            <body className="flex min-h-screen flex-col">
                 <NavBar />
-                <main className="grow">
-                    {children}
-                </main>
+                <main className="grow">{children}</main>
                 <Footer />
             </body>
         </html>

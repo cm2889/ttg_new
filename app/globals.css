@@ -1,154 +1,158 @@
 @import "tailwindcss";
 
 :root {
-  --color-btn-primary: #0c7e9a;
-  --color-primary: #1D9E75;
-  --color-dark: #1a1a2e;
-  --color-text: #0f172a;
-  --color-muted: #64748b;
-  --color-bg: #f8fafc;
-  --color-surface: #ffffff;
-  --color-border: #e2e8f0;  
+    --color-btn-primary: #0c7e9a;
+    --color-primary: #1d9e75;
+    --color-dark: #1a1a2e;
+    --color-text: #0f172a;
+    --color-muted: #64748b;
+    --color-bg: #f8fafc;
+    --color-surface: #ffffff;
+    --color-border: #e2e8f0;
 }
 
 @theme inline {
-  --color-btn-primary: var(--color-btn-primary);
-  --color-primary: var(--color-primary);
-  --color-dark: var(--color-dark);
-  --color-text: var(--color-text);
-  --color-muted: var(--color-muted);
-  --color-bg: var(--color-bg);
-  --color-surface: var(--color-surface);
-  --color-border: var(--color-border);
+    --color-btn-primary: var(--color-btn-primary);
+    --color-primary: var(--color-primary);
+    --color-dark: var(--color-dark);
+    --color-text: var(--color-text);
+    --color-muted: var(--color-muted);
+    --color-bg: var(--color-bg);
+    --color-surface: var(--color-surface);
+    --color-border: var(--color-border);
 
-  --font-funnel: var(--font-funnel-sans);
-  --font-clash: var(--font-clash-display);
+    --font-funnel: var(--font-funnel-sans);
+    --font-clash: var(--font-clash-display);
 }
 
 body {
-  font-family: var(--font-funnel-sans);
-  background-color: var(--color-bg);
-  color: var(--color-text); 
+    font-family: var(--font-funnel-sans);
+    background-color: var(--color-bg);
+    color: var(--color-text);
 }
 
 @keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .animate-marquee {
-  display: flex;
-  animation: marquee 22s linear infinite;
-  will-change: transform;
+    display: flex;
+    animation: marquee 22s linear infinite;
+    will-change: transform;
 }
 
 @keyframes team-marquee-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .team-marquee-track {
-  display: flex;
-  width: max-content;
-  animation: team-marquee-left 28s linear infinite;
-  will-change: transform;
+    display: flex;
+    width: max-content;
+    animation: team-marquee-left 28s linear infinite;
+    will-change: transform;
 }
 
 .team-marquee-shell:hover .team-marquee-track,
 .team-marquee-shell:focus-within .team-marquee-track {
-  animation-play-state: paused;
+    animation-play-state: paused;
 }
 
 @keyframes about-card-float-front {
-  0%,
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-  50% {
-    transform: translate3d(0, -12px, 0);
-  }
+    0%,
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+        transform: translate3d(0, -12px, 0);
+    }
 }
 
 @keyframes about-card-float-top {
-  0%,
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-  50% {
-    transform: translate3d(0, 8px, 0);
-  }
+    0%,
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+        transform: translate3d(0, 8px, 0);
+    }
 }
 
 @keyframes about-card-float-bottom {
-  0%,
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-  50% {
-    transform: translate3d(-4px, -10px, 0);
-  }
+    0%,
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+        transform: translate3d(-4px, -10px, 0);
+    }
 }
 
 @keyframes about-hero-glow {
-  0%,
-  100% {
-    opacity: 0.78;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.08);
-  }
+    0%,
+    100% {
+        opacity: 0.78;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.08);
+    }
 }
 
 .about-floating-card {
-  border: 1px solid rgba(227, 233, 238, 0.95);
-  border-radius: 28px;
-  backdrop-filter: blur(6px);
-  box-shadow: 0 20px 45px rgba(23, 34, 46, 0.08);
-  padding: 1.25rem;
+    border: 1px solid rgba(227, 233, 238, 0.95);
+    border-radius: 28px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 20px 45px rgba(23, 34, 46, 0.08);
+    padding: 1.25rem;
 }
 
 .about-floating-card-front {
-  animation: about-card-float-front 12s ease-in-out infinite;
+    animation: about-card-float-front 12s ease-in-out infinite;
 }
 
 .about-floating-card-top {
-  animation: about-card-float-top 11s ease-in-out infinite;
+    animation: about-card-float-top 11s ease-in-out infinite;
 }
 
 .about-floating-card-bottom {
-  animation: about-card-float-bottom 14s ease-in-out infinite;
+    animation: about-card-float-bottom 14s ease-in-out infinite;
 }
 
 .about-hero-glow {
-  background: radial-gradient(circle, rgba(107, 229, 255, 0.72) 0%, rgba(107, 229, 255, 0) 70%);
-  filter: blur(12px);
-  animation: about-hero-glow 16s ease-in-out infinite;
+    background: radial-gradient(
+        circle,
+        rgba(107, 229, 255, 0.72) 0%,
+        rgba(107, 229, 255, 0) 70%
+    );
+    filter: blur(12px);
+    animation: about-hero-glow 16s ease-in-out infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .team-marquee-track {
-    animation: none;
-    transform: translateX(0);
-  }
+    .team-marquee-track {
+        animation: none;
+        transform: translateX(0);
+    }
 
-  .team-marquee-duplicate {
-    display: none;
-  }
+    .team-marquee-duplicate {
+        display: none;
+    }
 
-  .about-floating-card-front,
-  .about-floating-card-top,
-  .about-floating-card-bottom,
-  .about-hero-glow {
-    animation: none;
-  }
+    .about-floating-card-front,
+    .about-floating-card-top,
+    .about-floating-card-bottom,
+    .about-hero-glow {
+        animation: none;
+    }
 }

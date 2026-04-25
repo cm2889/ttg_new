@@ -50,7 +50,7 @@ const SuccessStories = () => {
                             text="Success Stories"
                         />
 
-                        <h2 className="mt-7 max-w-3xl font-clash text-[34px]  font-medium text-[#2d3136] md:text-[40px] ">
+                        <h2 className="font-clash mt-7 max-w-3xl text-[34px] font-medium text-[#2d3136] md:text-[40px]">
                             Everything you need to scale-four core capabilities
                             in one integrated partner.
                         </h2>
@@ -60,7 +60,7 @@ const SuccessStories = () => {
                         href="/about"
                         text="Explore Case Study"
                         icon="/icons/Button_arrow/double-right-arrow.png"
-                        className="w-fit self-start md:mt-2 md:self-auto shadow-[0_14px_28px_rgba(13,90,112,0.28)]"
+                        className="w-fit self-start shadow-[0_14px_28px_rgba(13,90,112,0.28)] md:mt-2 md:self-auto"
                     />
                 </div>
 
@@ -68,7 +68,7 @@ const SuccessStories = () => {
                     {successCards.map((card, index) => (
                         <article
                             key={card.title}
-                            className="group overflow-hidden rounded-[18px]  bg-[#ffffff] shadow-[0_16px_50px_rgba(15,23,42,0.06)] backdrop-blur-[2px]"
+                            className="group overflow-hidden rounded-[18px] bg-[#ffffff] shadow-[0_16px_50px_rgba(15,23,42,0.06)] backdrop-blur-[2px]"
                         >
                             <div className="px-3 pt-3">
                                 <div className="relative aspect-16/10 w-full overflow-hidden rounded-xl border border-[#d7dde2] bg-[#edf1f4]">
@@ -87,13 +87,13 @@ const SuccessStories = () => {
                                     {card.title}
                                 </h3>
 
-                                <p className="max-w-xl font-funnel text-[15px] leading-[1.6] text-[#555555] md:text-[16px]">
+                                <p className="font-funnel max-w-xl text-[15px] leading-[1.6] text-[#555555] md:text-[16px]">
                                     {card.description}
                                 </p>
 
                                 <Link
                                     href={card.href}
-                                    className="mt-auto self-end font-funnel text-[13px] font-semibold tracking-[0.01em] text-[#0c7e9a] transition-colors hover:text-[#095f74]"
+                                    className="font-funnel mt-auto self-end text-[13px] font-semibold tracking-[0.01em] text-[#0c7e9a] transition-colors hover:text-[#095f74]"
                                 >
                                     Read More
                                 </Link>

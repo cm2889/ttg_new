@@ -54,7 +54,7 @@ const WhyTtg = () => {
                         Integrated Operations for Companies That Refuse to Stay
                         Stuck
                     </h2>
-                    <p className="mt-5 max-w-3xl font-funnel text-[15px] leading-[1.85] text-[#616b75] md:text-[18px]">
+                    <p className="font-funnel mt-5 max-w-3xl text-[15px] leading-[1.85] text-[#616b75] md:text-[18px]">
                         We do not just deliver services. We design and run the
                         systems behind your growth, from execution to
                         optimization, so every moving part works together.
@@ -70,7 +70,9 @@ const WhyTtg = () => {
                             <article
                                 key={item.title}
                                 className={`flex min-h-105 flex-col p-6 md:p-8 ${
-                                    !isLastMobileCard ? "border-b border-[#cecece]" : ""
+                                    !isLastMobileCard
+                                        ? "border-b border-[#cecece]"
+                                        : ""
                                 } ${
                                     isTopRow
                                         ? "md:border-b md:border-[#cecece]"
@@ -84,7 +86,7 @@ const WhyTtg = () => {
                                 <h3 className="font-clash text-[28px] leading-[1.2] font-medium text-[#1f2937] md:text-[34px]">
                                     {item.title}
                                 </h3>
-                                <p className="mt-3 max-w-140 font-funnel text-[15px] leading-[1.8] text-[#6b7280]">
+                                <p className="font-funnel mt-3 max-w-140 text-[15px] leading-[1.8] text-[#6b7280]">
                                     {item.description}
                                 </p>
 
@@ -92,13 +94,13 @@ const WhyTtg = () => {
                                     {item.tags.map((tag) => (
                                         <span
                                             key={tag}
-                                            className="rounded-full  bg-[#fafafa] px-4 py-1.5 font-funnel text-[13px] text-[#74808c]"
+                                            className="font-funnel rounded-full bg-[#fafafa] px-4 py-1.5 text-[13px] text-[#74808c]"
                                         >
                                             {tag}
                                         </span>
                                     ))}
                                 </div>
-                                <div className="relative  mt-8 -mb-8 h-52.5 overflow-hidden md:h-62.5">
+                                <div className="relative mt-8 -mb-8 h-52.5 overflow-hidden md:h-62.5">
                                     <Image
                                         src={item.image}
                                         alt={item.title}

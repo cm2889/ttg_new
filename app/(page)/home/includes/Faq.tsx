@@ -23,19 +23,18 @@ const categories: Category[] = [
         label: "Company Overview & Reach",
         faqs: [
             {
-                question: "Where is TTG based and do you serve international clients?",
-                answer:
-                    "TTG has offices in Dhaka, Bangladesh and Boras, Sweden. We primarily serve clients in the US, UK, and Europe, operating across time zones with 24/7 support coverage.",
+                question:
+                    "Where is TTG based and do you serve international clients?",
+                answer: "TTG has offices in Dhaka, Bangladesh and Boras, Sweden. We primarily serve clients in the US, UK, and Europe, operating across time zones with 24/7 support coverage.",
             },
             {
                 question: "How long has TTG been in business?",
-                answer:
-                    "TTG has been delivering outsourcing solutions for over 10 years, with a growing team of 200+ professionals across multiple continents.",
+                answer: "TTG has been delivering outsourcing solutions for over 10 years, with a growing team of 200+ professionals across multiple continents.",
             },
             {
-                question: "What makes TTG different from other outsourcing companies?",
-                answer:
-                    "Our dual-office model in Asia and Europe gives us a unique ability to deliver round-the-clock support while maintaining close cultural alignment with Western clients.",
+                question:
+                    "What makes TTG different from other outsourcing companies?",
+                answer: "Our dual-office model in Asia and Europe gives us a unique ability to deliver round-the-clock support while maintaining close cultural alignment with Western clients.",
             },
         ],
     },
@@ -45,18 +44,15 @@ const categories: Category[] = [
         faqs: [
             {
                 question: "What is your minimum engagement size?",
-                answer:
-                    "We work with teams as small as one dedicated resource. There is no strict minimum, we tailor every engagement to match the client's actual needs.",
+                answer: "We work with teams as small as one dedicated resource. There is no strict minimum, we tailor every engagement to match the client's actual needs.",
             },
             {
                 question: "Do you sign NDAs before discussions?",
-                answer:
-                    "Yes. We are happy to sign a mutual NDA before any project discussions begin to ensure full confidentiality from day one.",
+                answer: "Yes. We are happy to sign a mutual NDA before any project discussions begin to ensure full confidentiality from day one.",
             },
             {
                 question: "Can I start with a trial period?",
-                answer:
-                    "Absolutely. We offer a two-week paid trial so you can evaluate our team's capabilities before committing to a longer engagement.",
+                answer: "Absolutely. We offer a two-week paid trial so you can evaluate our team's capabilities before committing to a longer engagement.",
             },
         ],
     },
@@ -66,18 +62,15 @@ const categories: Category[] = [
         faqs: [
             {
                 question: "How quickly can TTG onboard a new project?",
-                answer:
-                    "Most projects can be kicked off within 3-5 business days once requirements are confirmed and contracts are signed.",
+                answer: "Most projects can be kicked off within 3-5 business days once requirements are confirmed and contracts are signed.",
             },
             {
                 question: "What does the onboarding process look like?",
-                answer:
-                    "We follow a structured four-step onboarding: discovery call, requirements sign-off, team assignment, and a kickoff sprint with daily check-ins for the first week.",
+                answer: "We follow a structured four-step onboarding: discovery call, requirements sign-off, team assignment, and a kickoff sprint with daily check-ins for the first week.",
             },
             {
                 question: "Will I have a dedicated point of contact?",
-                answer:
-                    "Yes. Every client is assigned a dedicated Account Manager and Project Lead who remain your primary contacts throughout the engagement.",
+                answer: "Yes. Every client is assigned a dedicated Account Manager and Project Lead who remain your primary contacts throughout the engagement.",
             },
         ],
     },
@@ -87,18 +80,15 @@ const categories: Category[] = [
         faqs: [
             {
                 question: "Do you offer custom pricing or fixed packages?",
-                answer:
-                    "We offer both. Fixed packages are available for well-defined scopes, while custom pricing is available for complex or evolving projects.",
+                answer: "We offer both. Fixed packages are available for well-defined scopes, while custom pricing is available for complex or evolving projects.",
             },
             {
                 question: "How are invoices handled?",
-                answer:
-                    "Invoices are issued monthly or bi-weekly depending on the engagement type. We accept bank transfer, Wise, and major online payment methods.",
+                answer: "Invoices are issued monthly or bi-weekly depending on the engagement type. We accept bank transfer, Wise, and major online payment methods.",
             },
             {
                 question: "Are there any hidden costs?",
-                answer:
-                    "No. All pricing is fully transparent. Any additional costs, such as software licenses or third-party tools, are discussed and agreed upon upfront.",
+                answer: "No. All pricing is fully transparent. Any additional costs, such as software licenses or third-party tools, are discussed and agreed upon upfront.",
             },
         ],
     },
@@ -108,30 +98,32 @@ const categories: Category[] = [
         faqs: [
             {
                 question: "What industries do you specialize in?",
-                answer:
-                    "We have deep expertise in e-commerce, SaaS, fintech, healthcare IT, and digital marketing, though our team has delivered solutions across many other sectors as well.",
+                answer: "We have deep expertise in e-commerce, SaaS, fintech, healthcare IT, and digital marketing, though our team has delivered solutions across many other sectors as well.",
             },
             {
                 question: "Do you have case studies I can review?",
-                answer:
-                    "Yes. We have detailed case studies available upon request covering projects in each of our core industry verticals.",
+                answer: "Yes. We have detailed case studies available upon request covering projects in each of our core industry verticals.",
             },
             {
-                question: "Can you handle regulated industries like healthcare or finance?",
-                answer:
-                    "Yes. We are experienced with HIPAA, GDPR, and PCI-DSS compliance requirements and can adapt our processes to meet your regulatory obligations.",
+                question:
+                    "Can you handle regulated industries like healthcare or finance?",
+                answer: "Yes. We are experienced with HIPAA, GDPR, and PCI-DSS compliance requirements and can adapt our processes to meet your regulatory obligations.",
             },
         ],
     },
 ];
 
 const Faq = () => {
-    const [activeCategory, setActiveCategory] = useState<string>(categories[0].id);
+    const [activeCategory, setActiveCategory] = useState<string>(
+        categories[0].id
+    );
     const [openFAQ, setOpenFAQ] = useState<number | null>(0);
 
     const currentCategory = useMemo(
-        () => categories.find((item) => item.id === activeCategory) ?? categories[0],
-        [activeCategory],
+        () =>
+            categories.find((item) => item.id === activeCategory) ??
+            categories[0],
+        [activeCategory]
     );
 
     const handleCategoryChange = (id: string) => {
@@ -153,16 +145,20 @@ const Faq = () => {
                         <h2 className="font-clash text-[32px] font-medium text-[#222a33] md:text-[40px]">
                             Got questions?
                         </h2>
-                        <h3 className="mt-1 font-clash text-[32px]  font-medium text-btn-primary md:text-[40px]">
+                        <h3 className="font-clash text-btn-primary mt-1 text-[32px] font-medium md:text-[40px]">
                             We&apos;ve got answers.
                         </h3>
 
-                        <p className="mt-7 max-w-100 font-funnel text-[17px] leading-[1.45] text-[#5e666f] md:text-[16px]">
-                            We know outsourcing feels like a big decision. Here&apos;s
-                            everything you&apos;re probably wondering.
+                        <p className="font-funnel mt-7 max-w-100 text-[17px] leading-[1.45] text-[#5e666f] md:text-[16px]">
+                            We know outsourcing feels like a big decision.
+                            Here&apos;s everything you&apos;re probably
+                            wondering.
                         </p>
 
-                        <nav className="mt-10 flex flex-col gap-3.5" aria-label="FAQ categories">
+                        <nav
+                            className="mt-10 flex flex-col gap-3.5"
+                            aria-label="FAQ categories"
+                        >
                             {categories.map((category) => {
                                 const isActive = activeCategory === category.id;
 
@@ -170,8 +166,10 @@ const Faq = () => {
                                     <button
                                         key={category.id}
                                         type="button"
-                                        onClick={() => handleCategoryChange(category.id)}
-                                        className={`w-fit text-left font-funnel text-[24px] leading-tight transition-colors duration-200 ${
+                                        onClick={() =>
+                                            handleCategoryChange(category.id)
+                                        }
+                                        className={`font-funnel w-fit text-left text-[24px] leading-tight transition-colors duration-200 ${
                                             isActive
                                                 ? "font-semibold text-[#0c7e9a]"
                                                 : "font-medium text-[#3f444a] hover:text-[#0c7e9a]"
@@ -196,20 +194,24 @@ const Faq = () => {
                     <div key={activeCategory} className="space-y-4 pt-1">
                         {currentCategory.faqs.map((faq, index) => {
                             const isOpen = openFAQ === index;
-                            const delay = (currentCategory.faqs.length - index - 1) * 80;
+                            const delay =
+                                (currentCategory.faqs.length - index - 1) * 80;
 
                             return (
                                 <article
                                     key={faq.question}
                                     className="rounded-2xl"
                                     style={{
-                                        animation: "faqLiftIn 520ms ease-out both",
+                                        animation:
+                                            "faqLiftIn 520ms ease-out both",
                                         animationDelay: `${delay}ms`,
                                     }}
                                 >
                                     <button
                                         type="button"
-                                        onClick={() => setOpenFAQ(isOpen ? null : index)}
+                                        onClick={() =>
+                                            setOpenFAQ(isOpen ? null : index)
+                                        }
                                         className="flex w-full items-center gap-4 rounded-xl bg-[#fafbfc] px-3 py-3 text-left"
                                         aria-expanded={isOpen}
                                     >
@@ -224,13 +226,11 @@ const Faq = () => {
                                             />
                                         </span>
 
-                                        <span className="flex-1 font-funnel text-[18px] leading-[1.35] font-medium text-[#1f252b] md:text-[20px]">
+                                        <span className="font-funnel flex-1 text-[18px] leading-[1.35] font-medium text-[#1f252b] md:text-[20px]">
                                             {faq.question}
                                         </span>
 
-                                        <span
-                                            className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-[#0c7e9a] text-[#0c7e9a]"
-                                        >
+                                        <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-[#0c7e9a] text-[#0c7e9a]">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 viewBox="0 0 24 24"
@@ -279,7 +279,7 @@ const Faq = () => {
                                         }`}
                                     >
                                         <div className="overflow-hidden">
-                                            <p className="ml-15 mr-0 mt-2 rounded-xl border border-[#b6dde6] bg-[#ffffff] px-5 py-4 font-funnel text-[15px] leading-[1.45] text-[#555555] md:ml-29 md:text-[20px]">
+                                            <p className="font-funnel mt-2 mr-0 ml-15 rounded-xl border border-[#b6dde6] bg-[#ffffff] px-5 py-4 text-[15px] leading-[1.45] text-[#555555] md:ml-29 md:text-[20px]">
                                                 {faq.answer}
                                             </p>
                                         </div>

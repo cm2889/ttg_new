@@ -65,11 +65,11 @@ const HowWeWork = () => {
                             text="How We Work"
                         />
 
-                        <h2 className="mt-7 max-w-140 font-clash text-[44px] leading-[1.1] font-medium text-[#0b1015] md:text-[54px] md:leading-[1.02]">
+                        <h2 className="font-clash mt-7 max-w-140 text-[44px] leading-[1.1] font-medium text-[#0b1015] md:text-[54px] md:leading-[1.02]">
                             From Inquiry to Results in 5 Steps
                         </h2>
 
-                        <p className="mt-8 max-w-140 font-funnel text-[16px] leading-[1.55] text-[#4c5762] md:text-[16px]">
+                        <p className="font-funnel mt-8 max-w-140 text-[16px] leading-[1.55] text-[#4c5762] md:text-[16px]">
                             Our refined process transforms your vision into a
                             high-performing and scalable reality through
                             structured execution, clear milestones, and
@@ -84,11 +84,11 @@ const HowWeWork = () => {
                             return (
                                 <article
                                     key={step.number}
-                                    className="sticky top-24  py-5"
+                                    className="sticky top-24 py-5"
                                     style={{ zIndex: index + 1 }}
                                 >
                                     <div className="rounded-xl border border-[#d5d5d5] bg-[#fcfcfc] p-4 md:p-5">
-                                        <div className="flex gap-10 justify-between items-end-safe md:items-start">
+                                        <div className="flex items-end-safe justify-between gap-10 md:items-start">
                                             <div>
                                                 <div className="flex items-start justify-between gap-4">
                                                     <span className="inline-flex h-8 w-8 items-center justify-center rounded-sm bg-[#0f1319] text-white">
@@ -99,17 +99,17 @@ const HowWeWork = () => {
                                                     </span>
                                                 </div>
 
-                                                <h3 className="mt-5 font-clash text-[14px] leading-[1.15] font-medium text-[#151c23] md:text-[24px]">
+                                                <h3 className="font-clash mt-5 text-[14px] leading-[1.15] font-medium text-[#151c23] md:text-[24px]">
                                                     {step.title}
                                                 </h3>
 
-                                                <p className="mt-4 max-w-170 font-funnel text-[15px] leading-normal text-[#515d68] md:text-[16px]">
+                                                <p className="font-funnel mt-4 max-w-170 text-[15px] leading-normal text-[#515d68] md:text-[16px]">
                                                     {step.description}
                                                 </p>
 
                                                 <button
                                                     type="button"
-                                                    className="mt-8 inline-flex items-center gap-3 font-funnel text-[15px] font-semibold text-[#0a81a8] transition-opacity hover:opacity-80 md:text-[16px]"
+                                                    className="font-funnel mt-8 inline-flex items-center gap-3 text-[15px] font-semibold text-[#0a81a8] transition-opacity hover:opacity-80 md:text-[16px]"
                                                 >
                                                     Learn more about this step
                                                     <FiArrowRight size={17} />

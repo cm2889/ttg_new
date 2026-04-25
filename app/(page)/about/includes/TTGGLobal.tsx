@@ -29,7 +29,7 @@ const TTGGLobal = () => {
             },
             {
                 threshold: 0.3,
-            },
+            }
         );
 
         observer.observe(target);
@@ -51,7 +51,7 @@ const TTGGLobal = () => {
             target: number,
             duration: number,
             setValue: React.Dispatch<React.SetStateAction<number>>,
-            frameSetter: (id: number) => void,
+            frameSetter: (id: number) => void
         ) => {
             const startedAt = performance.now();
 
@@ -84,21 +84,26 @@ const TTGGLobal = () => {
     }, [shouldAnimate]);
 
     return (
-        <section ref={sectionRef} className="w-full bg-[#f5f7f8] py-16 md:py-14">
+        <section
+            ref={sectionRef}
+            className="w-full bg-[#f5f7f8] py-16 md:py-14"
+        >
             <Container>
                 <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
                     <div className="max-w-4xl">
-                        <InfoBadge
-                            icon="/icons/Badges/cursor.png"
-                            text="Why TTG Global"
-                            className="mb-8"
-                        />
+                        <div className="flex justify-center md:justify-start">
+                            <InfoBadge
+                                icon="/icons/Badges/cursor.png"
+                                text="Why TTG Global"
+                                className="mb-8"
+                            />
+                        </div>
 
-                        <h2 className="font-clash text-[38px] leading-[1.05] font-medium text-[#0f141a] md:text-[40px]">
+                        <h2 className="font-clash flex justify-center text-[24px] leading-[1.05] font-medium text-[#0f141a] md:justify-start md:text-[40px]">
                             One Partner, All Capabilities
                         </h2>
 
-                        <p className="mt-4 max-w-3xl font-funnel text-[18px] leading-[1.55] text-[#4f555c] md:text-[16px]">
+                        <p className="font-funnel mt-4 max-w-3xl text-[14px] leading-[1.55] text-[#4f555c] md:text-[16px]">
                             Most companies work with 4-6 vendors for what TTG
                             delivers under one roof. We eliminate coordination
                             overhead and fragmented delivery through a unified
@@ -124,15 +129,15 @@ const TTGGLobal = () => {
                                     "repeating-linear-gradient(-36deg, rgba(22, 27, 33, 0.022) 0px, rgba(22, 27, 33, 0.022) 2px, transparent 2px, transparent 9px)",
                             }}
                         >
-                            <span className="font-clash text-[78px] leading-none font-medium text-[#090c12] md:text-[93px]">
+                            <span className="font-clash text-[52px] leading-none font-medium text-[#090c12] md:text-[93px]">
                                 #1
                             </span>
 
                             <div className="mt-auto">
-                                <h3 className="font-clash text-[44px] leading-none font-medium text-btn-primary md:text-[30px]">
+                                <h3 className="font-clash text-btn-primary text-[16px] leading-none font-medium md:text-[30px]">
                                     Partner
                                 </h3>
-                                <p className="mt-3 max-w-72 font-funnel text-[15px] leading-[1.45] text-[#4e555d] md:text-[12px]">
+                                <p className="font-funnel mt-3 max-w-72 text-[14px] leading-[1.45] text-[#4e555d] md:text-[12px]">
                                     Complete end-to-end integration across every
                                     vertical
                                 </p>
@@ -147,15 +152,15 @@ const TTGGLobal = () => {
                                     "repeating-linear-gradient(-36deg, rgba(22, 27, 33, 0.022) 0px, rgba(22, 27, 33, 0.022) 2px, transparent 2px, transparent 9px)",
                             }}
                         >
-                            <span className="font-clash text-[78px] leading-none font-medium text-[#090c12] md:text-[93px]">
+                            <span className="font-clash text-[52px] leading-none font-medium text-[#090c12] md:text-[93px]">
                                 AI+
                             </span>
 
                             <div className="mt-auto">
-                                <h3 className="font-clash text-[44px] leading-none font-medium text-[#1083a4] md:text-[30px]">
+                                <h3 className="font-clash text-[16px] leading-none font-medium text-[#1083a4] md:text-[30px]">
                                     Architecture
                                 </h3>
-                                <p className="mt-3 max-w-72 font-funnel text-[15px] leading-[1.45] text-[#4e555d] md:text-[12px]">
+                                <p className="font-funnel mt-3 max-w-72 text-[14px] leading-[1.45] text-[#4e555d] md:text-[12px]">
                                     Algorithmic precision baked into every
                                     structural decision.
                                 </p>
@@ -170,15 +175,15 @@ const TTGGLobal = () => {
                                     "repeating-linear-gradient(-36deg, rgba(22, 27, 33, 0.022) 0px, rgba(22, 27, 33, 0.022) 2px, transparent 2px, transparent 9px)",
                             }}
                         >
-                            <span className="font-clash text-[78px] leading-none font-medium text-[#090c12] md:text-[93px]">
+                            <span className="font-clash text-[52px] leading-none font-medium text-[#090c12] md:text-[93px]">
                                 {count30}+
                             </span>
 
                             <div className="mt-auto">
-                                <h3 className="font-clash text-[44px] leading-none font-medium text-[#1083a4] md:text-[30px]">
+                                <h3 className="font-clash text-[16px] leading-none font-medium text-[#1083a4] md:text-[30px]">
                                     Faster Delivery
                                 </h3>
-                                <p className="mt-3 max-w-72 font-funnel text-[15px] leading-[1.45] text-[#4e555d] md:text-[12px]">
+                                <p className="font-funnel mt-3 max-w-72 text-[14px] leading-[1.45] text-[#4e555d] md:text-[12px]">
                                     Average acceleration on operational
                                     onboarding cycles
                                 </p>
@@ -193,16 +198,17 @@ const TTGGLobal = () => {
                                     "repeating-linear-gradient(-36deg, rgba(22, 27, 33, 0.022) 0px, rgba(22, 27, 33, 0.022) 2px, transparent 2px, transparent 9px)",
                             }}
                         >
-                            <span className="font-clash text-[78px] leading-none font-medium text-[#090c12] md:text-[93px]">
+                            <span className="font-clash text-[52px] leading-none font-medium text-[#090c12] md:text-[93px]">
                                 {count92}%
                             </span>
 
                             <div className="mt-auto">
-                                <h3 className="font-clash text-[44px] leading-none font-medium text-[#1083a4] md:text-[30px]">
+                                <h3 className="font-clash text-[16px] leading-none font-medium text-[#1083a4] md:text-[30px]">
                                     Retention Rate
                                 </h3>
-                                <p className="mt-3 max-w-72 font-funnel text-[15px] leading-[1.45] text-[#4e555d] md:text-[12px]">
-                                    Built on consistent high-performance results.
+                                <p className="font-funnel mt-3 max-w-72 text-[14px] leading-[1.45] text-[#4e555d] md:text-[12px]">
+                                    Built on consistent high-performance
+                                    results.
                                 </p>
                             </div>
                         </article>

@@ -21,14 +21,14 @@ const Hero = () => {
                         <InfoBadge
                             icon="/icons/Badges/three-people.png"
                             text="Who we are"
-                            className="mb-7 h-10"
+                            className=""
                         />
 
                         <h1 className="font-clash text-4xl leading-tight font-medium text-[#04070D] md:text-[40px]">
                             We design systems powering modern companies.
                         </h1>
 
-                        <p className="mt-3 max-w-md font-funnel text-[16px] leading-relaxed text-[#525353]">
+                        <p className="font-funnel mt-3 max-w-md text-[16px] leading-relaxed text-[#525353]">
                             TotalTech Global unifies operations across teams,
                             tools, and workflows with scalable, structured
                             systems.
@@ -45,27 +45,27 @@ const Hero = () => {
                                     alt="Global operations summary card"
                                     width={568}
                                     height={568}
-                                    className=" md:w-[240px] md:h-[219px]"
+                                    className="md:h-[219px] md:w-[240px]"
                                 />
                             </article>
 
-                            <article className="about-floating-card-bottom absolute right-0 bottom-12 z-10 w-72  md:w-87">
+                            <article className="about-floating-card-bottom absolute right-0 bottom-12 z-10 w-72 md:w-87">
                                 <Image
                                     src="/images/About/graphs-container.png"
                                     alt="Performance trend card"
                                     width={1200}
                                     height={800}
-                                    className="md:w-[242px] md:h-[170px]"
+                                    className="md:h-[170px] md:w-[242px]"
                                 />
                             </article>
 
-                            <article className="about-floating-card-front absolute top-37 left-30 z-30 w-72  md:w-108">
+                            <article className="about-floating-card-front absolute top-37 left-30 z-30 w-72 md:w-108">
                                 <Image
                                     src="/images/About/monthly-breakdown.png"
                                     alt="Efficiency gains card"
                                     width={768}
                                     height={768}
-                                    className="md:w-[290px] md:h-[273px]"
+                                    className="md:h-[273px] md:w-[290px]"
                                 />
                             </article>
                         </div>

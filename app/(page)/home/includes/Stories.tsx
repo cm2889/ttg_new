@@ -83,18 +83,22 @@ const Stories = () => {
                     text="Real Stories, Real Results"
                 />
 
-                <h2 className="mt-8 max-w-240 font-clash text-[34px] leading-[1.2] font-medium text-[#0b0b0b] md:text-[40px] md:leading-[1.05]">
+                <h2 className="font-clash mt-8 max-w-240 text-[34px] leading-[1.2] font-medium text-[#0b0b0b] md:text-[40px] md:leading-[1.05]">
                     Loved by creators, marketers, and teams
                 </h2>
 
-                <p className="mt-4 font-funnel text-[18px] text-[#525353] md:text-[16px]">
-                    Real stories from individuals, teams, creators, and marketers.
+                <p className="font-funnel mt-4 text-[18px] text-[#525353] md:text-[16px]">
+                    Real stories from individuals, teams, creators, and
+                    marketers.
                 </p>
 
                 <div className="relative mt-10 overflow-hidden rounded-2xl bg-[#0b0b0b] p-4 md:p-5">
                     <div
                         className="flex transition-transform duration-500 ease-out"
-                        style={{ width: `${stories.length * 100}%`, transform: `translateX(-${slideOffset}%)` }}
+                        style={{
+                            width: `${stories.length * 100}%`,
+                            transform: `translateX(-${slideOffset}%)`,
+                        }}
                     >
                         {stories.map((story) => (
                             <article
@@ -103,20 +107,23 @@ const Stories = () => {
                                 style={{ width: `${100 / stories.length}%` }}
                             >
                                 <div className="flex h-full flex-col gap-5 overflow-hidden rounded-xl md:flex-row md:items-center md:justify-between md:gap-8">
-                                    <div className="flex min-h-64 min-w-0 flex-1 flex-col px-2 py-2 pb-12 md:px-1 md:py-3 md:pr-5 ">
+                                    <div className="flex min-h-64 min-w-0 flex-1 flex-col px-2 py-2 pb-12 md:px-1 md:py-3 md:pr-5">
                                         <div className="flex items-center justify-between gap-4">
                                             <div className="flex items-center gap-1.5">
-                                                {Array.from({ length: 5 }).map((_, starIndex) => (
-                                                    <FaStar
-                                                        key={`${story.id}-star-${starIndex}`}
-                                                        size={18}
-                                                        className={
-                                                            starIndex < story.rating
-                                                                ? "text-[#ff6f3d]"
-                                                                : "text-[#d4d4d4]"
-                                                        }
-                                                    />
-                                                ))}
+                                                {Array.from({ length: 5 }).map(
+                                                    (_, starIndex) => (
+                                                        <FaStar
+                                                            key={`${story.id}-star-${starIndex}`}
+                                                            size={18}
+                                                            className={
+                                                                starIndex <
+                                                                story.rating
+                                                                    ? "text-[#ff6f3d]"
+                                                                    : "text-[#d4d4d4]"
+                                                            }
+                                                        />
+                                                    )
+                                                )}
                                             </div>
 
                                             <div className="border-l border-[#7a7f85] pl-6">
@@ -132,13 +139,18 @@ const Stories = () => {
 
                                         <div className="mt-8 h-px w-full bg-[#f2f4f6]/80" />
 
-                                        <p className="mt-12 max-w-2xl font-funnel text-[15px] leading-[1.7] text-[#f4f6f8] md:mt-20 md:text-[16px] ">
+                                        <p className="font-funnel mt-12 max-w-2xl text-[15px] leading-[1.7] text-[#f4f6f8] md:mt-20 md:text-[16px]">
                                             “{story.description}”
                                         </p>
 
-                                        <p className="mt-auto pt-10 font-funnel text-[18px] text-[#f8fbfe] md:text-[16px]">
-                                            <span className="font-semibold">{story.name}</span>
-                                            <span className="text-[#c0c7ce]"> - {story.role}</span>
+                                        <p className="font-funnel mt-auto pt-10 text-[18px] text-[#f8fbfe] md:text-[16px]">
+                                            <span className="font-semibold">
+                                                {story.name}
+                                            </span>
+                                            <span className="text-[#c0c7ce]">
+                                                {" "}
+                                                - {story.role}
+                                            </span>
                                         </p>
                                     </div>
 
@@ -173,7 +185,7 @@ const Stories = () => {
                                         type="button"
                                         aria-label="Next story"
                                         onClick={handleNext}
-                                        className="inline-flex items-center justify-center transition-colors duration-200 hover:cursor-pointer "
+                                        className="inline-flex items-center justify-center transition-colors duration-200 hover:cursor-pointer"
                                     >
                                         <FiArrowRight size={25} />
                                     </button>

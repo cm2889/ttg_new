@@ -22,15 +22,15 @@ const ProvenTrust = () => {
             }}
         >
             <Container className="py-14 md:py-20">
-                <h2 className="text-center font-clash text-[18px] font-Regular text-[#111827] md:text-[28px]">
+                <h2 className="font-clash font-Regular text-center text-[18px] text-[#111827] md:text-[28px]">
                     Proven & Trusted Worldwide
                 </h2>
 
-                <div className="mt-10 grid grid-cols-1 gap-4  md:gap-6 md:grid-cols-3">
+                <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-6">
                     {reviewCards.map((item) => (
                         <article
                             key={item.id}
-                            className="rounded-2xl border border-[#ddedf0] bg-[#f8f9fa] px-8 py-8 "
+                            className="rounded-2xl border border-[#ddedf0] bg-[#f8f9fa] px-8 py-8"
                         >
                             <div className="mb-3 flex justify-center">
                                 <Image
@@ -42,11 +42,11 @@ const ProvenTrust = () => {
                                 />
                             </div>
 
-                            <h3 className="text-center font-funnel text-[20px] leading-none font-semibold text-[#111827] md:text-[25px]">
+                            <h3 className="font-funnel text-center text-[20px] leading-none font-semibold text-[#111827] md:text-[25px]">
                                 {item.name}
                             </h3>
 
-                            <p className="mt-4 text-center font-funnel text-[20px] leading-none text-[#5f6872] md:text-[16px]">
+                            <p className="font-funnel mt-4 text-center text-[20px] leading-none text-[#5f6872] md:text-[16px]">
                                 Reviewed On
                             </p>
                         </article>

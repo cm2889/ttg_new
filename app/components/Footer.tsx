@@ -36,7 +36,13 @@ const socialLinks: Array<{
         name: "Facebook",
         href: "#",
         icon: (
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-4 w-4">
+            <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.8"
+                className="h-4 w-4"
+            >
                 <path d="M14.5 8H16V5h-2c-2.2 0-3.5 1.4-3.5 3.6V11H8v3h2.5v5H14v-5h2.4l.6-3H14v-2c0-.7.3-1 1-1Z" />
             </svg>
         ),
@@ -45,7 +51,13 @@ const socialLinks: Array<{
         name: "LinkedIn",
         href: "#",
         icon: (
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-4 w-4">
+            <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.8"
+                className="h-4 w-4"
+            >
                 <rect x="4" y="4" width="16" height="16" rx="2" />
                 <path d="M8.5 10.5v6" />
                 <path d="M8.5 8.1h.01" />
@@ -57,10 +69,22 @@ const socialLinks: Array<{
         name: "Instagram",
         href: "#",
         icon: (
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-4 w-4">
+            <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.8"
+                className="h-4 w-4"
+            >
                 <rect x="4" y="4" width="16" height="16" rx="5" />
                 <circle cx="12" cy="12" r="3.3" />
-                <circle cx="16.8" cy="7.4" r="0.7" fill="currentColor" stroke="none" />
+                <circle
+                    cx="16.8"
+                    cy="7.4"
+                    r="0.7"
+                    fill="currentColor"
+                    stroke="none"
+                />
             </svg>
         ),
     },
@@ -68,7 +92,7 @@ const socialLinks: Array<{
 
 const Footer = () => {
     return (
-        <footer className="relative overflow-hidden bg-[#f4f7f8] pb-12 pt-20">
+        <footer className="relative overflow-hidden bg-[#f4f7f8] pt-20 pb-12">
             <div className="pointer-events-none absolute inset-0">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.9),rgba(247,249,250,0.98)_48%,rgba(242,246,248,1)_100%)]" />
                 <div
@@ -91,33 +115,36 @@ const Footer = () => {
                         className=""
                     />
 
-                    <h2 className="mt-5 max-w-3xl font-clash text-[34px] font-medium leading-[1.18] text-[#0f1721] md:text-[40px]">
+                    <h2 className="font-clash mt-5 text-[28px] leading-[1.18] font-medium text-[#0f1721] md:max-w-3xl md:text-[40px]">
                         Empowering Businesses With
                         <span className="block">Smart Tech Solution.</span>
                     </h2>
 
-                    <p className="mt-5 max-w-xl text-[16px] leading-8 text-[#a3a3a3] md:text-[16px] md:leading-7">
-                        We unify technology, talent, and infrastructure to help your business
-                        scale smoothly and efficiently without friction.
+                    <p className="mt-5 max-w-xl text-[14px] leading-8 text-[#555555] md:text-[16px] md:leading-7">
+                        We unify technology, talent, and infrastructure to help
+                        your business scale smoothly and efficiently without
+                        friction.
                     </p>
 
                     <CommonButton
                         href="/contact"
                         text="Contact Us"
                         icon="/icons/Button_arrow/arrow-up-right.png"
-                        className="mt-8 "
+                        className="mt-8"
                     />
                 </div>
 
-                <div className="mt-24 grid gap-10 pt-3 md:grid-cols-12">
+                <div className="mt-24 grid gap-10 pt-3 text-center md:grid-cols-12 md:text-left">
                     <div className="lg:col-span-2">
-                        <h3 className="text-[22px] font-medium text-[#1f2937] md:text-[15.6px]">Services</h3>
+                        <h3 className="text-[14px] font-medium text-[#1f2937] md:text-[15.6px]">
+                            Services
+                        </h3>
                         <ul className="mt-6 space-y-3">
                             {servicesLinks.map((link) => (
                                 <li key={link.label}>
                                     <Link
                                         href={link.href}
-                                        className="text-[13.6px] text-[#686868] transition-colors hover:text-[#0c7e9a]"
+                                        className="text-[12px] text-[#686868] transition-colors hover:text-[#0c7e9a]"
                                     >
                                         {link.label}
                                     </Link>
@@ -127,13 +154,15 @@ const Footer = () => {
                     </div>
 
                     <div className="lg:col-span-2">
-                        <h3 className="text-[22px] font-medium text-[#1f2937] md:text-[15.6px]">Company</h3>
+                        <h3 className="text-[14px] font-medium text-[#1f2937] md:text-[15.6px]">
+                            Company
+                        </h3>
                         <ul className="mt-6 space-y-3">
                             {companyLinks.map((link) => (
                                 <li key={link.label}>
                                     <Link
                                         href={link.href}
-                                        className="text-[13.6px] text-[#686868] transition-colors hover:text-[#0c7e9a]"
+                                        className="text-[12px] text-[#686868] transition-colors hover:text-[#0c7e9a]"
                                     >
                                         {link.label}
                                     </Link>
@@ -143,13 +172,15 @@ const Footer = () => {
                     </div>
 
                     <div className="lg:col-span-3">
-                        <h3 className="text-[22px] font-medium text-[#1f2937] md:text-[15.6px]">Contact</h3>
+                        <h3 className="text-[14px] font-medium text-[#1f2937] md:text-[15.6px]">
+                            Contact
+                        </h3>
                         <ul className="mt-6 space-y-3">
                             {contactLinks.map((link) => (
                                 <li key={link.label}>
                                     <Link
                                         href={link.href}
-                                        className="text-[13.6px] text-[#686868] transition-colors hover:text-[#0c7e9a]"
+                                        className="text-[12px] text-[#686868] transition-colors hover:text-[#0c7e9a]"
                                     >
                                         {link.label}
                                     </Link>
@@ -159,7 +190,9 @@ const Footer = () => {
                     </div>
 
                     <div className="md:col-span-2 lg:col-span-5">
-                        <h3 className="text-[22px] font-medium text-[#1f2937] md:text-[15.6px]">Stay Updated With Us</h3>
+                        <h3 className="text-[14px] font-medium text-[#1f2937] md:text-[15.6px]">
+                            Stay Updated With Us
+                        </h3>
 
                         <div className="mt-6 flex w-full flex-col gap-3 sm:flex-row sm:items-center">
                             <label htmlFor="footer-email" className="sr-only">
@@ -169,7 +202,7 @@ const Footer = () => {
                                 id="footer-email"
                                 type="email"
                                 placeholder="Email*"
-                                className="h-13 w-full rounded-full border border-[#cdcdcd] bg-[#fbfbfa] px-6 text-[16px] text-[#686868] placeholder:text-[#686868] outline-none transition-all focus:border-[#0c7e9a]"
+                                className="h-13 w-full rounded-full border border-[#cdcdcd] bg-[#fbfbfa] px-6 text-[16px] text-[#686868] transition-all outline-none placeholder:text-[#686868] focus:border-[#0c7e9a]"
                             />
                             <CommonButton
                                 href="/insights"
