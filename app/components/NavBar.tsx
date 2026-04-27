@@ -163,9 +163,9 @@ const NavBar = () => {
                 <div className="flex items-center gap-4">
                     <CommonButton
                         href="/contact"
-                        text="Contact Us"
+                        text="Contact Us "
                         className="hidden sm:flex"
-                        icon="/icons/arrow-up-right.png"
+                        icon="/icons/Button_arrow/arrow-up-right.png"
                     />
 
                     {/* Mobile Menu Toggle */}
@@ -275,7 +275,7 @@ const NavBar = () => {
                                 <CommonButton
                                     href="/contact"
                                     text="Contact Us"
-                                    icon="/icons/arrow-up-right.png"
+                                    icon="/icons/Button_arrow/arrow-up-right.png"
                                     className="relative z-10 mt-10"
                                     onClick={() => setIsOpen(false)}
                                 />

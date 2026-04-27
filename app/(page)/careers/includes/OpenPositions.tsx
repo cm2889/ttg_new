@@ -1,29 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import Container from "@/app/components/Container";
+import jobsData from "@/app/data/jobs.json";
 
-const openings = [
-    {
-        title: "Senior BPO Ops Manager",
-        type: "Full-Time",
-        location: "Remote (Global)",
-    },
-    {
-        title: "Full-Stack Software Developer",
-        type: "Contract",
-        location: "EMEA Region",
-    },
-    {
-        title: "Customer Experience Strategist",
-        type: "Full-Time",
-        location: "Sylhet, BD / Remote",
-    },
-    {
-        title: "Senior UI/UX Product Designer",
-        type: "Full-Time",
-        location: "Remote (UTC+/-4)",
-    },
-] as const;
+const jobs = jobsData;
 
 const OpenPositions = () => {
     return (
@@ -66,10 +46,10 @@ const OpenPositions = () => {
                 </div>
 
                 <div className="mt-8 space-y-4 md:mt-10 md:space-y-5">
-                    {openings.map((opening) => {
+                    {jobs.map((opening) => {
                         return (
                             <article
-                                key={opening.title}
+                                key={opening.id}
                                 className="rounded-xl px-4 py-4 md:px-6 md:py-5"
                                 style={{
                                     backgroundColor: "#f0f2f3",
@@ -93,7 +73,7 @@ const OpenPositions = () => {
                                     </div>
 
                                     <Link
-                                        href="/careers"
+                                        href={`/careers/${opening.id}`}
                                         className="font-funnel text-btn-primary self-start text-[16px] font-medium underline decoration-1 underline-offset-2 transition-opacity hover:opacity-85 md:self-center"
                                     >
                                         Apply Now

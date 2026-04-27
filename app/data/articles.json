@@ -1,0 +1,156 @@
+[
+    {
+        "id": 7,
+        "title": "Scaling Microservices Without Chaos",
+        "description": "As systems grow, microservices can quickly become difficult to manage. This guide explores how to handle service sprawl, maintain observability, and implement structured deployment strategies without introducing unnecessary complexity. As systems grow, microservices can quickly become difficult to manage. This guide explores how to handle service sprawl, maintain observability, and implement structured deployment strategies without introducing unnecessary complexity.As systems grow, microservices can quickly become difficult to manage. This guide explores how to handle service sprawl, maintain observability, and implement structured deployment strategies without introducing unnecessary complexity.As systems grow, microservices can quickly become difficult to manage. This guide explores how to handle service sprawl, maintain observability, and implement structured deployment strategies without introducing unnecessary complexity.As systems grow, microservices can quickly become difficult to manage. This guide explores how to handle service sprawl, maintain observability, and implement structured deployment strategies without introducing unnecessary complexity.",
+        "image": "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg",
+        "date": "10 February 2026",
+        "readingTime": "6 min read",
+        "category": "Tech",
+        "author": {
+            "name": "Jerome Bell",
+            "role": "CEO TTG",
+            "image": "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg"
+        }
+    },
+    {
+        "id": 8,
+        "title": "AI in Customer Support",
+        "description": "AI is transforming customer support by automating repetitive tasks while preserving human-like interactions. Learn how to balance automation with empathy to deliver faster and more reliable support experiences.",
+        "image": "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg",
+        "date": "02 March 2026",
+        "readingTime": "5 min read",
+        "category": ["Customer Support", "AI", "api"],
+        "author": {
+            "name": "Jerome Bell",
+            "role": "CEO TTG",
+            "image": "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg"
+        }
+    },
+    {
+        "id": 9,
+        "title": "Design Systems That Actually Scale",
+        "description": "Most design systems fail due to lack of adoption and poor structure. This article breaks down how to build scalable design systems that improve consistency, speed up development, and align teams effectively.",
+        "image": "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg",
+        "date": "18 July 2025",
+        "readingTime": "8 min read",
+        "category": ["Design"],
+        "author": {
+            "name": "Jerome Bell",
+            "role": "CEO TTG",
+            "image": "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg"
+        }
+    },
+    {
+        "id": 10,
+        "title": "From MVP to Production",
+        "description": "Turning an MVP into a production-ready product requires more than just adding features. Discover the architectural decisions, testing strategies, and performance considerations needed for long-term scalability.",
+        "image": "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg",
+        "date": "11 September 2025",
+        "readingTime": "7 min read",
+        "category": ["Startup"],
+        "author": {
+            "name": "Jerome Bell",
+            "role": "CEO TTG",
+            "image": "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg"
+        }
+    },
+    {
+        "id": 11,
+        "title": "Automating DevOps Pipelines",
+        "description": "Manual deployment processes slow teams down and introduce risk. This guide covers how to design efficient CI/CD pipelines that automate testing, integration, and deployment with minimal friction.",
+        "image": "https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg",
+        "date": "25 December 2025",
+        "readingTime": "6 min read",
+        "category": ["DevOps"],
+        "author": {
+            "name": "Jerome Bell",
+            "role": "CEO TTG",
+            "image": "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg"
+        }
+    },
+    {
+        "id": 12,
+        "title": "Data-Driven Product Decisions",
+        "description": "Successful products rely on data, not assumptions. Learn how to use analytics, user behavior insights, and experimentation to make smarter product decisions and improve outcomes over time.",
+        "image": "https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg",
+        "date": "14 November 2025",
+        "readingTime": "5 min read",
+        "category": ["Product"],
+        "author": {
+            "name": "Jerome Bell",
+            "role": "CEO TTG",
+            "image": "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg"
+        }
+    },
+    {
+        "id": 13,
+        "title": "The Future of Remote Teams",
+        "description": "Remote work is no longer a temporary shift—it’s the future. This article explores how distributed teams can maintain productivity, build strong culture, and collaborate effectively across time zones.",
+        "image": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg",
+        "date": "09 January 2026",
+        "readingTime": "6 min read",
+        "category": ["Workplace"],
+        "author": {
+            "name": "Jerome Bell",
+            "role": "CEO TTG",
+            "image": "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg"
+        }
+    },
+    {
+        "id": 14,
+        "title": "Security First Development",
+        "description": "Security should never be an afterthought. Discover how integrating security practices early in the development lifecycle can prevent vulnerabilities and protect your systems at scale.",
+        "image": "https://images.pexels.com/photos/5380642/pexels-photo-5380642.jpeg",
+        "date": "03 May 2025",
+        "readingTime": "7 min read",
+        "category": ["Security"],
+        "author": {
+            "name": "Jerome Bell",
+            "role": "CEO TTG",
+            "image": "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg"
+        }
+    },
+    {
+        "id": 15,
+        "title": "Low-Code vs Full-Code",
+        "description": "Choosing between low-code platforms and full-code development depends on your business goals. This guide compares flexibility, speed, scalability, and long-term maintenance trade-offs.",
+        "image": "https://images.pexels.com/photos/3861964/pexels-photo-3861964.jpeg",
+        "date": "22 August 2025",
+        "readingTime": "5 min read",
+        "category": ["Tech"],
+        "author": {
+            "name": "Jerome Bell",
+            "role": "CEO TTG",
+            "image": "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg"
+        }
+    },
+    {
+        "id": 16,
+        "title": "AI-Powered Marketing Funnels",
+        "description": "AI is redefining how marketing funnels are built and optimized. Learn how predictive analytics and automation can improve targeting, engagement, and conversion rates.",
+        "image": "https://images.pexels.com/photos/905163/pexels-photo-905163.jpeg",
+        "date": "30 March 2026",
+        "readingTime": "6 min read",
+        "category": ["Marketing"],
+        "author": {
+            "name": "Jerome Bell",
+            "role": "CEO TTG",
+            "image": "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg"
+        }
+    },
+    {
+        "id": 17,
+        "title": "Building Resilient Systems",
+        "description": "System failures are inevitable, but downtime doesn’t have to be. Explore design patterns and infrastructure strategies that improve fault tolerance and ensure high availability.",
+        "image": "https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg",
+        "date": "17 April 2025",
+        "readingTime": "7 min read",
+        "category": ["Tech"],
+        "author": {
+            "name": "Jerome Bell",
+            "role": "CEO TTG",
+            "image": "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg"
+        }
+    }
+]

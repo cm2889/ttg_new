@@ -115,7 +115,7 @@ const CardInfo = () => {
                                     />
 
                                     <div
-                                        className={`absolute inset-0 bg-gradient-to-b from-black/30 to-black/30 transition-opacity duration-300 ${
+                                        className={`absolute inset-0 bg-gradient-to-b from-[#477FB3] to-transparent transition-opacity duration-300 ${
                                             hoveredId === card.id
                                                 ? "opacity-100"
                                                 : "opacity-0"
@@ -135,7 +135,7 @@ const CardInfo = () => {
                                             {card.description}{" "}
                                             {card.description}
                                         </p>
-                                        <button className="text-btn-primary hover:text-btn-primary/70 flex items-center gap-1 self-end font-sans text-sm font-medium transition-colors">
+                                        <button className="hover:text-btn-primary/70 flex items-center gap-1 self-end font-sans text-sm font-medium text-[#0c7e9a] transition-colors">
                                             Read More
                                         </button>
                                     </div>

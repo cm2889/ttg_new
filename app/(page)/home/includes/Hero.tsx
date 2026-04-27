@@ -45,7 +45,7 @@ const Hero = () => {
                     <CommonButton
                         href="/consultation"
                         text="Book A Consultation"
-                        icon="/icons/arrow-up-right.png"
+                        icon="/icons/Button_arrow/arrow-up-right.png"
                     />
                     <button
                         className="group border-btn-primary flex flex-row items-center justify-center gap-4 rounded-full border-2 p-1.5 px-2 py-2 text-sm font-semibold text-black transition-all"
@@ -63,7 +63,7 @@ const Hero = () => {
                         <span className="bg-btn-primary text-btn-primary flex h-7 w-7 shrink-0 items-center justify-center rounded-full transition-transform group-hover:rotate-45">
                             <div className="relative h-5 w-5">
                                 <Image
-                                    src="/icons/discover-circle.png"
+                                    src="/icons/Button_arrow/discover-circle.png"
                                     alt="Discover services"
                                     fill
                                     className="object-contain"

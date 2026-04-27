@@ -1,5 +1,8 @@
 import React from "react";
 import Container from "@/app/components/Container";
+import jobsData from "@/app/data/jobs.json";
+
+const jobs = jobsData;
 
 const inputClassName =
     "h-11 w-full rounded-xl border border-transparent bg-[#f8f8f8] px-4 font-funnel text-[16px] text-[#3f454d] placeholder:text-[#a4a8ad] outline-none focus:border-[#9bcdd8]";
@@ -7,6 +10,7 @@ const inputClassName =
 const ApplyForm = () => {
     return (
         <section
+            id="apply-form"
             className="w-full bg-[#f5f7f8] py-14 md:py-20"
             style={{
                 backgroundImage:
@@ -132,21 +136,16 @@ const ApplyForm = () => {
                                                 <option value="" disabled>
                                                     Select a role
                                                 </option>
-                                                <option>
-                                                    Senior BPO Ops Manager
-                                                </option>
-                                                <option>
-                                                    Full-Stack Software
-                                                    Developer
-                                                </option>
-                                                <option>
-                                                    Customer Experience
-                                                    Strategist
-                                                </option>
-                                                <option>
-                                                    Senior UI/UX Product
-                                                    Designer
-                                                </option>
+                                                {jobs.map((job) => {
+                                                    return (
+                                                        <option
+                                                            key={job.id}
+                                                            value={job.id}
+                                                        >
+                                                            {job.title}
+                                                        </option>
+                                                    );
+                                                })}
                                             </select>
 
                                             <span className="pointer-events-none absolute top-1/2 right-3 -translate-y-1/2 text-[#69717a]">

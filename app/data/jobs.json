@@ -1,0 +1,181 @@
+[
+    {
+        "id": "senior-bpo-ops-manager",
+        "title": "Senior BPO Ops Manager",
+        "type": "Full-Time",
+        "location": "Remote (Global)",
+        "experience": "8-12 years experience",
+        "department": "Operations",
+        "sections": {
+            "aboutTtg": "TotalTech Global is a full-stack business operations partner serving clients across Europe, North America, and Asia. We design and run the back-office systems that power modern companies - from CX and BPO to IT infrastructure and software delivery.",
+            "theRole": "We are looking for a Senior BPO Operations Manager to lead and scale our global back-office delivery teams. You will own end-to-end operations for key client accounts, drive SLA performance, and build the systems that help our clients grow without friction.",
+            "responsibilities": [
+                "Oversee day-to-day BPO delivery across multiple client accounts and geographies",
+                "Own SLA/KPI performance - define, track, and continuously improve metrics",
+                "Build and manage high-performing remote teams of 20-80 agents/specialists",
+                "Partner with client stakeholders on QBRs, escalation management, and expansion planning",
+                "Identify automation and AI opportunities to reduce manual overhead",
+                "Collaborate with Technology and CX teams to design seamless operational pipelines",
+                "Drive onboarding of new accounts from transition to steady-state"
+            ],
+            "requirements": [
+                "8+ years in BPO, contact center, or shared services operations",
+                "Proven track record managing large remote/distributed teams",
+                "Strong command of CRM tools (Zendesk, Salesforce, HubSpot)",
+                "Experience with SLA-driven environments and performance dashboards",
+                "Excellent client-facing communication and presentation skills",
+                "Ability to work across UTC timezones (flexibility required)"
+            ],
+            "niceToHave": [
+                "Experience scaling operations from 0 to 100+ headcount",
+                "Familiarity with AI/automation tools like ChatGPT, Intercom AI, or similar",
+                "Background in e-commerce, SaaS, or marketplace operations"
+            ]
+        },
+        "keySkills": [
+            "BPO",
+            "CRM",
+            "Process Optimization",
+            "Team Leadership",
+            "SLA Management"
+        ],
+        "whatWeOffer": [
+            "Fully remote with flexible hours",
+            "Competitive base + performance bonus",
+            "Global team retreats",
+            "Learning and development budget",
+            "Direct exposure to leadership"
+        ]
+    },
+    {
+        "id": "full-stack-software-developer",
+        "title": "Full-Stack Software Developer",
+        "type": "Contract",
+        "location": "EMEA Region",
+        "experience": "4-7 years experience",
+        "department": "Engineering",
+        "sections": {
+            "aboutTtg": "TotalTech Global builds digital products and internal platforms for modern service businesses. We blend product thinking, delivery excellence, and operations depth to help teams ship reliable software quickly.",
+            "theRole": "As a Full-Stack Software Developer, you will design and build production-ready features across web applications and internal tools. You will work closely with product, design, and operations teams to solve high-impact workflow challenges.",
+            "responsibilities": [
+                "Develop and maintain full-stack features using modern TypeScript stacks",
+                "Translate product requirements into scalable technical solutions",
+                "Integrate APIs and third-party services with secure, observable implementations",
+                "Write maintainable, tested code and contribute to CI/CD pipelines",
+                "Collaborate in code reviews and architecture discussions",
+                "Improve performance, reliability, and developer experience"
+            ],
+            "requirements": [
+                "3+ years building web products with React and Node.js",
+                "Strong TypeScript fundamentals across frontend and backend",
+                "Experience with relational or document databases",
+                "Familiarity with cloud deployment workflows",
+                "Strong debugging and communication skills"
+            ],
+            "niceToHave": [
+                "Experience with Next.js App Router",
+                "Exposure to workflow automation or AI-assisted product features",
+                "Experience working with distributed teams across timezones"
+            ]
+        },
+        "keySkills": [
+            "TypeScript",
+            "React",
+            "Node.js",
+            "API Integration",
+            "CI/CD"
+        ],
+        "whatWeOffer": [
+            "Flexible contract engagement",
+            "Outcome-driven engineering culture",
+            "Opportunity to work on global products",
+            "Learning stipend for tools and certifications"
+        ]
+    },
+    {
+        "id": "customer-experience-strategist",
+        "title": "Customer Experience Strategist",
+        "type": "Full-Time",
+        "location": "Sylhet, BD / Remote",
+        "experience": "5-8 years experience",
+        "department": "Customer Experience",
+        "sections": {
+            "aboutTtg": "TotalTech Global partners with growth-stage and enterprise teams to build customer journeys that are measurable, scalable, and deeply human.",
+            "theRole": "We are hiring a Customer Experience Strategist to shape end-to-end CX programs for key accounts. You will identify friction points, define service standards, and orchestrate cross-functional teams to deliver better outcomes.",
+            "responsibilities": [
+                "Map customer journeys and identify critical service gaps",
+                "Design CX playbooks and service recovery frameworks",
+                "Define CX metrics and dashboards with stakeholders",
+                "Partner with operations and product teams to implement improvements",
+                "Facilitate workshops and client reviews with actionable recommendations"
+            ],
+            "requirements": [
+                "5+ years in CX strategy, support operations, or service design",
+                "Strong analytical skills with comfort using customer and operational data",
+                "Experience with CRM/support systems and ticketing workflows",
+                "Excellent facilitation, storytelling, and stakeholder management"
+            ],
+            "niceToHave": [
+                "Background in SaaS or digital services",
+                "Experience launching multilingual support operations",
+                "Familiarity with AI-assisted support tooling"
+            ]
+        },
+        "keySkills": [
+            "CX Strategy",
+            "Journey Mapping",
+            "Service Design",
+            "Data Analysis",
+            "Stakeholder Management"
+        ],
+        "whatWeOffer": [
+            "Hybrid/remote flexibility",
+            "Cross-functional collaboration with global teams",
+            "Career growth into CX leadership",
+            "Learning budget and mentorship"
+        ]
+    },
+    {
+        "id": "senior-ui-ux-product-designer",
+        "title": "Senior UI/UX Product Designer",
+        "type": "Full-Time",
+        "location": "Remote (UTC+/-4)",
+        "experience": "6-10 years experience",
+        "department": "Product Design",
+        "sections": {
+            "aboutTtg": "At TotalTech Global, design is central to how we solve operational complexity. We craft experiences that are elegant for users and efficient for delivery teams.",
+            "theRole": "As a Senior UI/UX Product Designer, you will lead discovery, interaction design, and visual execution across multiple digital products. You will work closely with engineers and strategists to deliver polished, usable experiences.",
+            "responsibilities": [
+                "Lead product discovery through research, interviews, and rapid prototyping",
+                "Translate business goals into intuitive user flows and interfaces",
+                "Create and evolve scalable design systems",
+                "Collaborate with engineering to ensure high-fidelity implementation",
+                "Present design rationale to stakeholders and clients"
+            ],
+            "requirements": [
+                "5+ years of end-to-end product design experience",
+                "Strong portfolio showcasing systems thinking and shipped products",
+                "Proficiency with modern design and prototyping tools",
+                "Ability to balance UX quality with delivery constraints"
+            ],
+            "niceToHave": [
+                "Experience designing data-heavy B2B workflows",
+                "Familiarity with motion design and interaction animation",
+                "Experience mentoring junior designers"
+            ]
+        },
+        "keySkills": [
+            "UI/UX",
+            "Design Systems",
+            "User Research",
+            "Prototyping",
+            "Product Thinking"
+        ],
+        "whatWeOffer": [
+            "Remote-first creative environment",
+            "High ownership across product decisions",
+            "Access to premium design tooling",
+            "Global collaboration and visibility"
+        ]
+    }
+]

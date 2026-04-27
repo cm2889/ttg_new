@@ -290,19 +290,6 @@ const Faq = () => {
                     </div>
                 </div>
             </Container>
-
-            <style jsx>{`
-                @keyframes faqLiftIn {
-                    from {
-                        opacity: 0;
-                        transform: translateY(32px);
-                    }
-                    to {
-                        opacity: 1;
-                        transform: translateY(0);
-                    }
-                }
-            `}</style>
         </section>
     );
 };

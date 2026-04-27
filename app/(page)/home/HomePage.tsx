@@ -9,6 +9,7 @@ import HowWeWork from "./includes/HowWeWork";
 import WhyTtg from "./includes/WhyTtg";
 import SuccessStories from "./includes/SuccessStories";
 import Faq from "./includes/Faq";
+import CallWithTtg from "../contact/includes/CallWithTtg";
 
 const HomePage = () => {
     return (
@@ -21,6 +22,7 @@ const HomePage = () => {
             <TrustClient />
             <Stories />
             <SuccessStories />
+            <CallWithTtg />
             <Faq />
             <ProvenTrust />
         </div>

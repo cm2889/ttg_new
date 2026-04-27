@@ -109,6 +109,17 @@ body {
     }
 }
 
+@keyframes faqLiftIn {
+    from {
+        opacity: 0;
+        transform: translateY(32px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .about-floating-card {
     border: 1px solid rgba(227, 233, 238, 0.95);
     border-radius: 28px;
