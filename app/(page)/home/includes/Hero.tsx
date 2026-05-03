@@ -73,14 +73,14 @@ const Hero = () => {
                     </button>
                 </div>
 
-                <div className="relative w-screen overflow-hidden md:mt-24">
+                <div className="relative w-screen overflow-hidden bg-[#f5f7f8] md:mt-24">
                     <video
                         src="/videos/home/home-hero-2.mp4"
                         autoPlay
                         muted
                         loop
                         playsInline
-                        className="h-65 w-full object-cover object-center md:h-100"
+                        className="block h-65 w-full -mb-2 object-cover object-center md:h-100"
                     ></video>
                     <div className="pointer-events-none absolute inset-0 mix-blend-multiply"></div>
                 </div>

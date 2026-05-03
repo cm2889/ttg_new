@@ -5,31 +5,31 @@ import Image from "next/image";
 
 const Hero = () => {
     return (
-        <section className="relative h-[820px] w-full overflow-hidden md:h-[760px]">
-            <div
-                className="pointer-events-none  absolute inset-0 flex flex-col md:flex-row"
-                
-            >
+        <section className="relative min-h-screen w-full overflow-hidden md:h-[760px] md:min-h-0">
+            <div className="pointer-events-none absolute inset-0 flex flex-col md:flex-row">
                 <div
-                    className="h-full w-full bg-cover bg-white bg-center bg-no-repeat md:w-[50%]"
+                    className="flex-1 w-full bg-cover bg-white bg-center bg-no-repeat md:h-full md:w-[50%]"
                     style={{
                         backgroundImage:
                             "url('/images/CaseStudies/case-studies-left-part.png')",
                     }}
                 />
                 <div 
-                    className="h-full w-full bg-cover bg-white bg-center bg-no-repeat md:w-[50%]"
+                    className="flex-1 w-full bg-cover bg-white bg-center bg-no-repeat md:h-full md:w-[50%]"
                     style={{
                         backgroundImage:
                             "url('/images/CaseStudies/case-studies-right-part.png')",
                     }}
                     
                 />
-                <div className="relative flex min-h-[450px] items-center justify-center md:min-h-[600px]">
+            </div>
+
+            <div className="pointer-events-none absolute inset-0 flex items-center justify-center md:justify-end">
+                <div className="relative flex min-h-[450px] items-center justify-center md:min-h-[600px] md:w-1/2 md:pr-10">
                         
                          {/* Hero Card 5  */}
                         <div
-                            className="absolute -top-10 right-10 z-50 w-[240px] md:top-70 md:right-25 md:w-[421px] md:h-[209px] "
+                            className="absolute top-98 -right-45 z-41 w-[240px] md:top-50 md:right-25 md:w-[421px] md:h-[209px] "
                             data-aos="fade-down-left"
                             data-aos-delay="1100"
                         >
@@ -43,7 +43,7 @@ const Hero = () => {
                         </div>
                         {/* Hero Card 4  */}
                         <div
-                            className="absolute -top-10 right-10 z-40 w-[240px] md:top-55 md:right-15 md:w-[340px] md:h-[156px] "
+                            className="absolute top-88 -right-55 z-40 w-[230px] md:top-35 md:right-15 md:w-[340px] md:h-[156px] "
                             data-aos="fade-down-left"
                             data-aos-delay="800"
                         >
@@ -57,7 +57,7 @@ const Hero = () => {
                         </div>
                         {/* Hero Card 2  */}
                         <div
-                            className="absolute -top-10 right-10 z-40 w-[240px] md:top-66 md:right-56 md:w-[378px] md:h-[180px] "
+                            className="absolute top-93 -right-25 z-40 w-[240px] md:top-45 md:right-55 md:w-[378px] md:h-[180px] "
                             data-aos="fade-down-left"
                             data-aos-delay="800"
                         >
@@ -72,7 +72,7 @@ const Hero = () => {
 
                         {/* Hero Card 3 */}
                         <div
-                            className="absolute top-10 right-5 z-30 w-[240px] md:top-85 md:right-0 md:w-[339px] md:h-[156px] "
+                            className="absolute top-100 -right-65 z-30 w-[240px] md:top-65 md:right-0 md:w-[339px] md:h-[156px] "
                             data-aos="fade-up-left"
                             data-aos-delay="600"
                         >
@@ -87,7 +87,7 @@ const Hero = () => {
 
                         {/* Hero Card 1 - */}
                         <div
-                            className="absolute right-0 bottom-0 z-30 w-[240px] md:right-38 md:bottom-50 md:w-[380px] md:h-[180px] "
+                            className="absolute -right-37 -bottom-44  z-30 w-[240px] md:right-38 md:bottom-30 md:w-[380px] md:h-[180px] "
                             data-aos="fade-up-left"
                             data-aos-delay="600"
                         >

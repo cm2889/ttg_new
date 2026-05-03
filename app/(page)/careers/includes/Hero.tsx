@@ -4,7 +4,7 @@ import InfoBadge from "@/app/components/InfoBadge";
 
 const Hero = () => {
     return (
-        <section className="relative h-[820px] w-full overflow-hidden md:h-[760px]">
+        <section className="relative h-[820px] w-full  overflow-hidden md:h-[760px]">
             <div
                 className="pointer-events-none  absolute inset-0 flex flex-col md:flex-row"
                 
@@ -16,9 +16,9 @@ const Hero = () => {
                             "url('/images/Careers/career-bg-half.png')",
                     }}
                 />
-                <div className="h-full w-full md:w-[40%]">
+                <div className="h-full w-full md:w-[40%] bg-white">
                     <video
-                        className="h-full w-full  object-cover"
+                        className="h-full w-full  object-cover "
                         autoPlay
                         muted
                         loop
